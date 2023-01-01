@@ -12,6 +12,8 @@ namespace Recap_Demo_Project
             Button[,] buttons = new Button[8,8];
             int top=0;
             int left=0;
+            Height = 450;
+            Width = 450;
             for (int i = 0; i < buttons.GetUpperBound(0); i++)
             {
                 for (int j = 0; j < buttons.GetUpperBound(1); j++)
@@ -32,6 +34,7 @@ namespace Recap_Demo_Project
                     buttons[i, j].Top = top;
                   
                     this.Controls.Add(buttons[i,j]);
+                    
                 }
                 top += 50;
                 left = 0;
